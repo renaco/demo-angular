@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  //moduleId: module.id,
   selector: 'app-section-component',
   template: `
     <h1>
       Section Component
     <h1>
+    <img src="http://placecage.com/350/500" alt="">
   `,
   styles: []
 })

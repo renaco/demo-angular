@@ -5,9 +5,11 @@ import { Component } from '@angular/core';
   template: `
     <header>
       <nav>
-        <a routerLink="home">Home 1</a>
+        <a routerLink="">Home 2</a>
+        <a routerLink="user">User 3</a>
         <a routerLink="section">Section 2</a>
-        <a routerLink="">Item 3</a>
+        <a routerLink="another">Another 3</a>
+        <a routerLink="login">Login</a>
       </nav>
     </header>
   `,
