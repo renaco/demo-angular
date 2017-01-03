@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
+  //moduleId: module.id,
   selector: 'app-home-component',
   template: `
     <h1>
@@ -10,4 +10,5 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: []
 })
+
 export class HomeComponent { }

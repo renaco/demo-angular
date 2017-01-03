@@ -6,10 +6,13 @@ import { HttpModule } from '@angular/http';
 
 import { routing } from './app.routes';
 
-// import { HeaderComponent } from './components/partials/header/header.component';
+/**  Components */
+import { HeaderComponent } from './components/partials/header/header.component';
 // import { FooterComponent } from './components/partials/footer/footer.component';
 import { LoginComponent } from './components/partials/login/login.component';
 import { UserComponent } from './components/user/user.component';
+import { HomeComponent } from './components/home.component';
+import { SectionComponent } from './components/section.component';
 
 @NgModule({
   imports: [
@@ -21,8 +24,10 @@ import { UserComponent } from './components/user/user.component';
     ],
   declarations: [
     AppComponent,
-    // HeaderComponent,
+    HeaderComponent,
     // FooterComponent,
+    HomeComponent,
+    SectionComponent,
     LoginComponent,
     UserComponent
 ],
