@@ -1,0 +1,64 @@
+<div class="row">
+    <div class="col-md-12">
+        <h3>GitHubSearch</h3>
+        <form action="">
+            <div class="form-group">
+                <input class="form-control" type="text," placeholder="Enter Github Username" [(ngModel)]="username" name="username" (keyup)="searchUser()">
+            </div>
+        </form>
+    </div>
+</div>
+<aside *ngIf="user">
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{ user.name }}</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-thumbnail" src="{{ user.avatar_url }}" alt="">
+                <a href="{{ user.html_url }}" class="btn btn-default btn-block" target="_blank">View Profile</a>
+            </div>
+            <div class="col-md-8">
+                <div class="stats">
+                    <span class="label label-default">{{ user.bio }}</span>
+                    <span class="label label-primary">{{ user.blog }}</span>
+                    <span class="label label-success">{{ user.email }}</span>
+                    <span class="label label-info">{{ user.location }}</span>
+                    <span class="label label-warning">{{ user.login }}</span>
+                    <span class="label label-danger">{{ user.followers }}</span>
+                </div>
+                <br>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Username: </strong><span>{{ user.login }}</span></li>
+                    <li class="list-group-item"><strong>Location: </strong><span>{{ user.location }}</span></li>
+                    <li class="list-group-item"><strong>Email: </strong><span>{{ user.email }}</span></li>
+                    <li class="list-group-item"><strong>Blog: </strong><span>{{ user.blog }}</span></li>
+                    <li class="list-group-item"><strong>Member since: </strong><span>{{ user.created_at }}</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">User Repos</h3>
+    </div>
+    <div class="panel-body">
+        <div class="" *ngFor="let repo of repos">
+            
+            <div class="row">
+                <div class="col-md-9">
+                    <h4><a target="_blank" href="repo.html_url">{{ repo.name }}</a></h4>
+                    <p>{{ repo.description }}</p>
+                </div>
+                <div class="col-md-3">
+                    <span class="label label-default">{{ repo.watchers }}</span>
+                    <span class="label label-primary">{{ repo.forks }}</span>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+    </div>
+</aside>

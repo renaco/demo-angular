@@ -14,6 +14,7 @@ import { UserComponent } from './components/user/user.component';
 import { HomeComponent } from './components/home.component';
 import { SectionComponent } from './components/section.component';
 import { AnotherComponent  } from './components/another.component';
+import { ProfileComponent } from './components/profile/profile.component'
 
 @NgModule({
   imports: [
@@ -30,6 +31,7 @@ import { AnotherComponent  } from './components/another.component';
     HomeComponent,
     SectionComponent,
     AnotherComponent,
+    ProfileComponent,
     LoginComponent,
     UserComponent
 ],
