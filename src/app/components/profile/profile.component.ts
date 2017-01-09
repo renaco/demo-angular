@@ -27,7 +27,7 @@ export class ProfileComponent {
         
         this._githubService.getRepos().subscribe(repos => {
             this.repos = repos;
-            // console.table(repos)
+            // console.log(repos)
         });
         
         console.log('get repos')
