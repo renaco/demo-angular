@@ -12,6 +12,9 @@ import { FooterComponent } from './components/partials/footer/footer.component';
 import { LoginComponent } from './components/partials/login/login.component';
 import { UserComponent } from './components/user/user.component';
 import { HomeComponent } from './components/home.component';
+import { SearchComponent } from './components/search/search.component';
+import { AboutComponent } from './components/about/about.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { SectionComponent } from './components/section.component';
 import { AnotherComponent  } from './components/another.component';
 
@@ -28,6 +31,9 @@ import { AnotherComponent  } from './components/another.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
+    SearchComponent,
+    AboutComponent,
+    NavbarComponent,
     SectionComponent,
     AnotherComponent,
     LoginComponent,
