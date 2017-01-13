@@ -17,6 +17,7 @@ import { AboutComponent } from './components/about/about.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SectionComponent } from './components/section.component';
 import { AnotherComponent  } from './components/another.component';
+import { ArtistComponent  } from './components/artist/artist.component';
 
 @NgModule({
   imports: [
@@ -36,6 +37,7 @@ import { AnotherComponent  } from './components/another.component';
     NavbarComponent,
     SectionComponent,
     AnotherComponent,
+    ArtistComponent,
     LoginComponent,
     UserComponent
 ],

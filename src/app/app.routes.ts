@@ -11,6 +11,7 @@ import { UserComponent } from './components/user/user.component';
 import { LoginComponent } from './components/partials/login/login.component';
 import { SectionComponent } from './components/section.component';
 import { AnotherComponent } from './components/another.component';
+import { ArtistComponent } from './components/artist/artist.component';
 
 // const APP_ROUTES = [
 //   { path: '', name: 'Home', component: HomeComponent },
@@ -28,6 +29,10 @@ const appRoutes: Routes = [
   {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'artist/:id',
+    component: ArtistComponent
   }
 ];
 
