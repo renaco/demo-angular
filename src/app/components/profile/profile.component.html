@@ -33,8 +33,8 @@
                     <li class="list-group-item"><strong>Username: </strong><span>{{ user.login }}</span></li>
                     <li class="list-group-item"><strong>Location: </strong><span>{{ user.location }}</span></li>
                     <li class="list-group-item"><strong>Email: </strong><span>{{ user.email }}</span></li>
-                    <li class="list-group-item"><strong>Blog: </strong><span>{{ user.blog }}</span></li>
-                    <li class="list-group-item"><strong>Member since: </strong><span>{{ user.created_at }}</span></li>
+                    <li class="list-group-item"><strong>Blog: </strong><a href="{{ user.blog }}" target="_blank">{{ user.blog }}</a></li>
+                    <li class="list-group-item"><strong>Member since: </strong><span>{{ user.created_at | date:"MM/dd/yyyy" }}</span></li>
                 </ul>
             </div>
         </div>
@@ -46,7 +46,7 @@
     </div>
     <div class="panel-body">
         <div class="" *ngFor="let repo of repos">
-            
+
             <div class="row">
                 <div class="col-md-9">
                     <h4><a target="_blank" href="{{ repo.html_url }}">{{ repo.name }}</a></h4>
