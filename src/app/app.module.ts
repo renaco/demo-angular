@@ -6,7 +6,6 @@ import { HttpModule } from '@angular/http';
 
 import { Routing } from './app.routes';
 
-/**  Components */
 import { HeaderComponent } from './components/partials/header/header.component';
 import { FooterComponent } from './components/partials/footer/footer.component';
 import { LoginComponent } from './components/partials/login/login.component';

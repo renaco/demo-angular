@@ -1,5 +1,4 @@
 import { RouterModule, Routes } from '@angular/router';
-// import { provideRouter, RouterConfig } from '@angular/router';
 import { HomeComponent } from './components/home.component';
 import { UserComponent } from './components/user/user.component';
 import { LoginComponent } from './components/partials/login/login.component';
@@ -17,5 +16,4 @@ const APP_ROUTES = [
 export const Routing = RouterModule.forRoot(APP_ROUTES);
 
 export const APP_ROUTES_PROVIDERS = [
-  // provideRouter(routes)
 ];
