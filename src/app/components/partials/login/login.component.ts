@@ -22,12 +22,12 @@ export class LoginComponent implements OnInit {
       name: ['', [<any>Validators.required, <any>Validators.minLength(6)]],
       address: this._fb.group({
         street: ['', <any>Validators.required],
-        // postcode: ['']
+        postcode: ['']
       })
     });
 
     // subscribe to form changes
-    this.subcribeToFormChanges();
+    this.subscribeToFormChanges();
 
     // Update single value
     (<FormControl>this.myForm.controls['name'])
@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
     //     .setValue(people, { onlySelf: true });
   }
 
-  subcribeToFormChanges() {
+  subscribeToFormChanges() {
     const myFormStatusChanges$ = this.myForm.statusChanges;
     const myFormValueChanges$ = this.myForm.valueChanges;
 

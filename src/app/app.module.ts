@@ -13,6 +13,7 @@ import { UserComponent } from './components/user/user.component';
 import { HomeComponent } from './components/home.component';
 import { SectionComponent } from './components/section.component';
 import { AnotherComponent  } from './components/another.component';
+import { ModalComponent } from './components/partials/modal/modal.component';
 
 @NgModule({
   imports: [
@@ -30,7 +31,8 @@ import { AnotherComponent  } from './components/another.component';
     SectionComponent,
     AnotherComponent,
     LoginComponent,
-    UserComponent
+    UserComponent,
+    ModalComponent
 ],
   providers: [],
   bootstrap: [
