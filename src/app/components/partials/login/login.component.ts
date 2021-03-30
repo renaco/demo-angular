@@ -33,8 +33,6 @@ export class LoginComponent implements OnInit {
     (<FormControl>this.myForm.controls['name'])
       .setValue('John', { onlySelf: true });
 
-    // (<FormGroup>this.myForm)
-    //     .setValue(people, { onlySelf: true });
   }
 
   subscribeToFormChanges() {
