@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
     <h1 class="Title">
       {{ title }}
     <h1>
+    <app-sibling1></app-sibling1>
+    <app-sibling2></app-sibling2>
   `,
   styles: []
 })

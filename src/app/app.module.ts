@@ -14,6 +14,8 @@ import { HomeComponent } from './components/home.component';
 import { SectionComponent } from './components/section.component';
 import { AnotherComponent  } from './components/another.component';
 import { ModalComponent } from './components/partials/modal/modal.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
 
 @NgModule({
   imports: [
@@ -32,7 +34,9 @@ import { ModalComponent } from './components/partials/modal/modal.component';
     AnotherComponent,
     LoginComponent,
     UserComponent,
-    ModalComponent
+    ModalComponent,
+    Sibling1Component,
+    Sibling2Component
 ],
   providers: [],
   bootstrap: [
